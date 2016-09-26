@@ -1,0 +1,23 @@
+sound chart
+
+
+
+1.wav (middle C)
+IIb.wav (middle C#)
+II.wav (middle D)
+IIIb.wav (middle d#)
+III.wav (middle e)
+IV.wav (middle f)
+Vb.wav (middle f#)
+V.wav (middle g)
+VIb.wav (middle g#)
+VI.wav (middle a)
+VIIb.wav (middle a#)
+VII.wav (middle b)
+VIII.wav (middle b)
+12.wav (1 octave up c)
+
+
+
+
+mp3 files werent processed because i cant install the proper drivers on my computer for some reason

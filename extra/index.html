@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pixel Path</title>
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  </head>
+  <body>
+    <script>
+              /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          // Close the dropdown menu if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+      </script>
+    <script>
+                $(function () {
+              $(":file").change(function () {
+                  if (this.files && this.files[0]) {
+                      var reader = new FileReader();
+                      reader.onload = imageIsLoaded;
+                      reader.readAsDataURL(this.files[0]);
+                  }
+              });
+          });
+
+          function imageIsLoaded(e) {
+              $('#myImg').attr('src', e.target.result);
+          };
+    </script>
+    <section class="head" id="head">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><img src="images/bars.png" height="30px" width="30px"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="tempindex.html">Home</a>
+          <a href="index.html">New Image</a>
+          <a href="save.html">Save Pattern</a>
+        </div>
+      </div>
+    </section>
+    <section class="main-section" id="main">
+      <input type='file' />
+      <img id="myImg" src="#" alt="your image" />
+    </section>
+  </body>
+</html>

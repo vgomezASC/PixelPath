@@ -1,0 +1,52 @@
+#maincontent {
+   width:100%;
+   position:relative;
+   flex-grow: 1;
+}
+#tabs {
+   float:left;
+   background-color: white;
+   width:100%;
+   overflow:hidden;
+   position:relative;
+}
+ul.tab {
+    clear:left;
+    float:left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid #ccc;*/
+    background-color: transparent;
+    position:relative;
+    left:50%;
+    text-align:center;
+}
+
+/* Float the list items side by side */
+ul.tab li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 22px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fc/Translucent_50_percent_white.png);}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: lighter(60%);}

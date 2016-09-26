@@ -1,0 +1,5 @@
+a word on apache:
+so for this to run properly you have to install apache and set apache's html folder to the contents of this folder.
+for linux it was /etc/wwww/html, but it's inevitably different on windows and mac pcs if apache ends up being installed there, so be sure to look up on documentation
+
+this is a workaround to the differing origin data error that was encountered.
